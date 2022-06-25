@@ -22,11 +22,11 @@ class PostCreateView(CreateView):
 class  PostDetailView(DetailView):
     model = Post
 
-class PostUpdateView(UpdateView)
+class PostUpdateView(UpdateView):
     model = Post
     fields = "__all__"
     success_url  = reverse_lazy("blog:all")
-class PostDeleteView(DeleteView)
+class PostDeleteView(DeleteView):
     model = Post
     fields = "__all__"
     success_url  = reverse_lazy("blog:all")
